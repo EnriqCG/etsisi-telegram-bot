@@ -8,7 +8,7 @@ def get_logger(name=__name__, stream=False):
     formatter = logging.Formatter('[%(levelname)s]  %(asctime)s  %(filename)s:\t %(message)s\n')
     logger = logging.getLogger(name)
 
-    file_handler = logging.FileHandler(name + '.log')  # Instantiate the file handler
+    file_handler = logging.FileHandler("log/{}.log".format(name))  # Instantiate the file handler / save log files in log/
     file_handler.setFormatter(formatter)
     file_handler.setLevel(logging.WARNING)  # only logs warnings level or higher
     logger.addHandler(file_handler)
