@@ -48,7 +48,7 @@ def is_admin(user_id):
         return True
     return False
 
-  weekdays = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+weekdays = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 
 codedays = {
     "L": 0,
@@ -66,7 +66,8 @@ codedays = {
     "VIERNES": 4,
     "SÁBADO": 5,
     "SABADO": 6,
-    "DOMINGO": 7,
+    "DOMINGO": 7
+}
 
 def get_schedule():
     with io.open('horarios.json', 'r', encoding='utf8') as data_file:
