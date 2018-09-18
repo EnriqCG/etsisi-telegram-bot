@@ -50,10 +50,6 @@ def is_admin(user_id):
         return True
     return False
 
-<<<<<<< HEAD
-
-=======
->>>>>>> adminlist
 weekdays = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 
 codedays = {
@@ -72,14 +68,8 @@ codedays = {
     "VIERNES": 4,
     "SÁBADO": 5,
     "SABADO": 6,
-<<<<<<< HEAD
-    "DOMINGO": 7,
-}
-
-=======
     "DOMINGO": 7
 }
->>>>>>> adminlist
 
 def get_schedule():
     with io.open('horarios.json', 'r', encoding='utf8') as data_file:
